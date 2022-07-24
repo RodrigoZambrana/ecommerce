@@ -4,16 +4,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Navigation from './routes/navigation/navigation.component'
 import Authentication from './routes/authentication/authentication.component'
 import { UserContext } from './contexts/user.context'
-
-const Shop = () => {
-  return (
-    <div>
-      <div>
-        <h1>Shop page</h1>
-      </div>
-    </div>
-  )
-}
+import Shop from './routes/shop/shop.component'
 
 const App = () => {
   const { currentUser } = useContext(UserContext)
